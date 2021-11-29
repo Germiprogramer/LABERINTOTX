@@ -11,15 +11,18 @@ muro = ((0,1), (0,2), (0,3), (0,4), (1,1), (2,1), (2,3), (3,3), (4,0), (4,1), (4
 def mi_metodo(self, nombre):
     print("{}.mi_metodo({}".format(self, nombre))
 
-def __init__(self, x, y, z):
+def __init__(self, x, y):
     self.x = x
     self.y = y
-    self.z = z
 
 def mostrar(self):
-    print("Punto ({}, {}, {})".format(self.x, self.y, self.z))
+    print("Punto ({}, {})".format(self.x, self.y))
 
-#Punto = (x, y, z)
 
-#p = Punto(1, 2, 3)
+print(laberinto[1])
+#DUDA: COMO HAGO PARA QUE ME SAQUE UNA SOLA CASILLA, Y NO LA FILA COMPLETA
+
+
+#Punto = (x, y)
+#p = Punto(1, 2)
 #p.mostrar()
