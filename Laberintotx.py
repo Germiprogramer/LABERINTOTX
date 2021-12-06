@@ -1,8 +1,8 @@
 laberinto = [
-    [' ', 'X', 'X', 'X', 'X'], 
-    [' ', 'X', ' ', ' ', ' '],
-    [' ', 'X', ' ', 'X', ' '], 
-    [' ', ' ', ' ', 'X', ' '], 
+    ['camino', 'X', 'X', 'X', 'X'], 
+    ['camino', 'X', 'A', 'camino', 'camino'],
+    ['camino', 'X', 'camino', 'X', 'camino'], 
+    ['camino', 'camino', 'camino', 'X', 'camino'], 
     ['X', 'X', 'X', 'X', 'S']
     ]
 
@@ -13,7 +13,7 @@ y = 0
 print("Empiezas en la posición (0,0)")
 print((laberinto[y])[x])
 
-while (laberinto[y])[x] == ' ':
+while (laberinto[y])[x] == 'camino':
     direccion = input("Selecciona a la dirección a la cual quieres ir: ARRIBA, ABAJO, IZQUIERDA, DERECHA  >>>>  ")
     
     if direccion == "ABAJO":
@@ -34,7 +34,7 @@ while (laberinto[y])[x] == ' ':
     print((laberinto[y])[x])
 
     print("Estás en la casilla ({},{})".format(x,y))
-    if (laberinto[y])[x] == ' ':
+    if (laberinto[y])[x] == 'camino':
         print("La casilla elegida NO es un muro, puede continuar en el laberinto")
     else:
         print("La casilla es un muro")
