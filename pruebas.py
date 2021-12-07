@@ -82,3 +82,29 @@ tablero(laberinto)
 #p = Punto(1, 2)
 #p.mostrar()
     
+
+print("BIENVENIDO AL LABERINTO \nSELEECIONE LA DIFICULTAD A LA QUE DESEA JUGAR: 1, 2")
+dificultad = input()
+
+if dificultad == 1:
+    print("Ha seleccionado la dificultad 1. COMIENZA EL JUEGO")
+    laberinto = [
+         ['camino', 'X', 'X', 'X', 'X'], 
+         ['camino', 'X', 'camino', 'camino', 'camino'],
+         ['camino', 'X', 'camino', 'X', 'camino'], 
+         ['camino', 'camino', 'camino', 'X', 'camino'], 
+         ['X', 'X', 'X', 'X', 'S']
+         ]
+elif dificultad == 2:
+    print("Ha seleccionado la dificultad 2. COMIENZA EL JUEGO")
+    laberinto = [
+        ['camino', 'camino', 'camino', 'X', 'X', 'S', 'camino', 'X', 'X']
+        ['X', 'X', 'camino', 'X', 'X', 'X', 'camino', 'X', 'X']
+        ['camino', 'camino', 'camino', 'X', 'X', 'X', 'camino', 'X', 'X']
+        ['camino', 'X', 'X', 'X', 'X', 'X', 'camino', 'camino', 'X']
+        ['camino', 'camino', 'camino', 'X', 'X', 'X', 'X', 'camino', 'X']
+        ['camino', 'X', 'camino', 'camino', 'camino', 'X', 'X', 'camino', 'X']
+        ['camino', 'camino', 'camino', 'X', 'camino', 'X', 'camino', 'camino', 'X']
+        ['X', 'X', 'X', 'X', 'camino', 'X', 'camino', 'X', 'X']
+        ['X', 'X', 'X', 'X', 'camino', 'camino', 'camino', 'X', 'X']
+    ]

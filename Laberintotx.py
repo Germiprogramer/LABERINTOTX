@@ -1,6 +1,3 @@
-print("BIENVENIDO AL LABERINTO \nSELEECIONE LA DIFICULTAD A LA QUE DESEA JUGAR: 1, 2")
-dificultad = input()
-
 laberinto = [
     ['camino', 'X', 'X', 'X', 'X'], 
     ['camino', 'X', 'camino', 'camino', 'camino'],
@@ -8,6 +5,7 @@ laberinto = [
     ['camino', 'camino', 'camino', 'X', 'camino'], 
     ['X', 'X', 'X', 'X', 'S']
     ]
+
 
 x = 0
 y = 0
