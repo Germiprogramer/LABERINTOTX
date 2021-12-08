@@ -6,7 +6,6 @@ laberinto = [
     ['X', 'X', 'X', 'X', 'S']
     ]
 
-
 x = 0
 y = 0
 
