@@ -1,3 +1,5 @@
+#IMPORTANTE ACLARAR QUE CONSIDERO QUE MI LABERINTO ESTÁ AL REVÉS
+
 laberinto = [
     ['camino', 'X', 'X', 'X', 'X'], 
     ['camino', 'X', 'camino', 'camino', 'camino'],
@@ -12,12 +14,16 @@ y = 0
 
 print("Empiezas en la posición (0,0)")
 print((laberinto[y])[x])
+listarespuestas = ["","","","","","","","","","","","",""]
+i = 0
 
 while (laberinto[y])[x] == 'camino':
     direccion = input("Selecciona a la dirección a la cual quieres ir: ARRIBA, ABAJO, IZQUIERDA, DERECHA  >>>>  ")
     
     if direccion == "ABAJO" or "ARRIBA" or "IZQUIERDA" or "DERECHA":
         print("Has seleccionado {}".format(direccion))
+        listarespuestas[i] = direccion
+        i = i + 1
         
     if direccion == "ABAJO":
         x = x
@@ -44,3 +50,7 @@ while (laberinto[y])[x] == 'camino':
         break
     else:
         print("La casilla es un muro \nReinicia el programa para seguir jugando")
+
+
+print("LOS MOVIMIENTOS UTILIZADOS HAN SIDO:")
+print(listarespuestas)
